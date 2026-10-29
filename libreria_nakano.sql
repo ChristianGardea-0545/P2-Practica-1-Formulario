@@ -16,16 +16,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Base de datos: `libreria_nakano`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuarios`
---
-
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nombre` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
@@ -34,23 +24,14 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `usuarios`
+ Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `correo` (`correo`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
---
 
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
